@@ -3,38 +3,38 @@ class Rectangle
 {
 private:
     int width;
-    int height;
+    int length;
 
 public:
-    Rectangle(int w, int h)
+    Rectangle(int w, int l)
     {
         width = w;
-        height = h;
+        length = l;
     }
     int getWidth()
     {
         return width;
     }
-    int getHeight()
+    int getLength()
     {
-        return height;
+        return length;
     }
     void setWidth(int w)
     {
         width = w;
     }
-    void setHeight(int h)
+    void setLength(int l)
     {
-        height = h;
+        length = l;
     }
     int calculateArea()
     {
-        return width * height;
+        return width * length;
     }
     void printRectangle()
     {
         std::cout << "Width: " << width << std::endl;
-        std::cout << "Height: " << height << std::endl;
+        std::cout << "Length: " << length << std::endl;
     }
 };
 int main()
@@ -44,7 +44,7 @@ int main()
     int area = rectangle.calculateArea();
     std::cout << "Area: " << area << std::endl;
     rectangle.setWidth(8);
-    rectangle.setHeight(6);
+    rectangle.setLength(6);
     rectangle.printRectangle();
     return 0;
 }
