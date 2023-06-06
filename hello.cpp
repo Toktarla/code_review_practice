@@ -11,11 +11,11 @@ public:
         width = w;
         length = l;
     }
-    int getWidth()
+    int getWidth() const
     {
         return width;
     }
-    int getLength()
+    int getLength() const
     {
         return length;
     }
@@ -27,11 +27,11 @@ public:
     {
         length = l;
     }
-    int calculateArea()
+    int calculateArea() const
     {
         return width * length;
     }
-    void printRectangle()
+    void printRectangle() const
     {
         std::cout << "Width: " << width << std::endl;
         std::cout << "Length: " << length << std::endl;
